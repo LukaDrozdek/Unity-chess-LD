@@ -2722,8 +2722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 730f3fa9696864d48b33cc333af75ec3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightPrefab: {fileID: 1821335647474746, guid: d8f23b27334db604e86e774f68c316cd,
-    type: 3}
+  highlightPrefab: {fileID: 152244, guid: 760a4e99e34ece4488a56d2efac29c7f, type: 3}
   highlights: []
 --- !u!114 &1904881801
 MonoBehaviour:

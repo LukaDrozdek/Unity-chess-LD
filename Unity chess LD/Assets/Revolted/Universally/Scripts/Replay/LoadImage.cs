@@ -42,8 +42,8 @@ public class LoadImage : MonoBehaviour
         }
 
         roundNumber = int.Parse(inputFieldRoundNumber.GetComponent<Text>().text);
-        int maxRound = PlayerPrefs.GetInt("num");
-        if (roundNumber > maxRound && roundNumber == 0)
+        int maxRound = PlayerPrefs.GetInt("folderNumber");
+        if (roundNumber > maxRound || roundNumber <= 0)
         {
             errorMSG.text = "Round number dont exist";
             return;
@@ -51,7 +51,7 @@ public class LoadImage : MonoBehaviour
 
         if (isAutomatic)
         {
-            if (inputFieldSpeed.text == "")
+            if (inputFieldSpeed.text == "" || int.Parse(inputFieldSpeed.GetComponent<Text>().text) <= 0)
             {
                 errorMSG.text = "Round speed is not set";
                 return;

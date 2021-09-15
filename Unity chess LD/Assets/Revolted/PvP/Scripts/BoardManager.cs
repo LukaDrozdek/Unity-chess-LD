@@ -67,6 +67,7 @@ public class BoardManager : MonoBehaviour
                 {
                     // Move the chessman
                     MoveChessman(selectionX, selectionY);
+                    Screenshot.TakeScreenshot_Static(1024, 1024);
                 }
             }
         }
